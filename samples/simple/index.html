@@ -5,20 +5,32 @@
   <title>FSI Layers Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" href='simple.css' type="text/css"/>
-  <script src='simple.js'></script>
+  <link rel="stylesheet" href='prodgrid.css' type="text/css"/>
+  <script src='prodgrid.js'></script>
   <script src='{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/imagegrid/js/fsiimagegrid.js'></script>
+  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"></script>
 </head>
 <body>
-<div class="flex-container">
-<fsi-imagegrid style="text-align:center;width:100%; height:500px;"
-               dir="images/samples/showcase/shoes/"
-               cellWidth="260"
-               cellHeight="124"
-               preloadCount="60"
-               useQuickZoom="true"
->
-</fsi-imagegrid>
+<div class="container">
+  <div class="comparison">
+    <h1 class="text">NeptuneLabs Image Grid</h1>
+    <p class="text">FSI ImageGrid is a great way if you need to show a large collection of images at once.</p>
+    <div class="image-container">
+      <fsi-imagegrid style="text-align:center;width:100%; height:800px;"
+                     dir="images/samples/showcase/shoes/"
+                     cellWidth="260"
+                     cellHeight="260"
+                     preloadCount="60"
+                     debug="true"
+                     effects="pad(CC,FFFFFF)"
+                     useTouchZoom="true"
+      >
+      </fsi-imagegrid>
+    </div>
+  </div>
+</div>
+<div class="flex-container my-auto">
+
 </div>
 </body>
 </html>
