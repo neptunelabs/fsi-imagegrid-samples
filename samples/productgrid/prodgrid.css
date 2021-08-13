@@ -7,6 +7,11 @@
   cursor: pointer;
 }
 
+div.fsi-imagegrid-inner-container > div {
+  border: 1px solid #33333340;
+  background-color: #6660;
+}
+
 .site-header {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
