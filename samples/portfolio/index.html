@@ -9,8 +9,10 @@
   <script src='portfolio.js'></script>
   <script src='{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/imagegrid/js/fsiimagegrid.js'></script>
   <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"></script>
+  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/viewer/js/fsiviewer.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
 </head>
@@ -51,7 +53,9 @@
                      useQuickZoom="false"
                      autoCrop="cc"
                      scroll="false"
-                     debug="false">
+                     debug="true"
+                     onCellClick="openPopUp"
+      >
 
         <fsi-imagegrid-template style="display:none">
           <div class="myImageGridTitle">
@@ -73,6 +77,21 @@
     </div>
   </div>
 
+  </div>
+
+  <div id="modalSelection" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <fsi-viewer adaptiveUISize="false" id="grid-viewer"
+                    progressBarVAlign="top" progressBarWidth="50"  inPlaceZoom="true"
+                    autoDisablePointerActions="true" plugins="fullScreen,resize"
+                    fullScreenElement="samplePopupContent" skin="white" width="1140px" height="800px"
+                    src="images/samples/grid/landscape/samuel-ferrara-5zAhR9dGK-Q-unsplash.jpg"
+                    debug="true">
+
+        </fsi-viewer>
+      </div>
+    </div>
   </div>
 </main>
 

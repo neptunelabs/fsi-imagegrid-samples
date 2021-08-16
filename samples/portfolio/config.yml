@@ -1,6 +1,6 @@
 title: Photographer Portfolio
 image: logo.png
-description: Shows how a portfolio could be displayed with ImageGrid and Metadata used.
+description: Shows how a portfolio could be displayed with ImageGrid and Metadata used. On click a zoom viewer with the image is opened
 priority: 4
 jsfiddle:
   mapping:
