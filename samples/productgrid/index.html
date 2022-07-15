@@ -19,7 +19,7 @@
 <header class="site-header sticky-top py-1">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
     <a class="py-2" href="#" aria-label="Product">
-      <img src="//fsi-site.neptunelabs.com/fsi/static/assets/samples/ssi/logo-misc-gre.svg" height="24">
+      <img src="{{{fsi.server}}}/{{{fsi.context}}}/static/assets/samples/ssi/logo-misc-gre.svg" height="24">
     </a>
     <a class="p-6 d-none d-md-inline-block" href="#">SHOP</a>
     <a class="p-6 d-none d-md-inline-block" href="#">COLLECTION</a>
@@ -30,31 +30,31 @@
 </header>
 
 <main>
-<div class="w-100 bg-image">
-  <div class="d-md-flex text-light flex-md-equal py-3 mx-auto text-center overflow-hidden">
-    <h2 class="display-5">Brighten Up Your Life.</h2>
-  </div>
-  <div class="d-md-flex text-light flex-md-equal mx-auto text-center overflow-hidden">
-    <h6>Choose from our great variety of products.</h6>
-  </div>
+  <div class="w-100 bg-image">
+    <div class="d-md-flex text-light flex-md-equal py-3 mx-auto text-center overflow-hidden">
+      <h2 class="display-5">Brighten Up Your Life.</h2>
+    </div>
+    <div class="d-md-flex text-light flex-md-equal mx-auto text-center overflow-hidden">
+      <h6>Choose from our great variety of products.</h6>
+    </div>
 
-  <div class="row w-100 d-md-flex flex-md-equal py-3 text-center overflow-hidden">
-    <div class="col-md-3">
+    <div class="row w-100 d-md-flex flex-md-equal py-3 text-center overflow-hidden">
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6">
+        <fsi-imagegrid style="text-align:center;width:100%; height:1000px;"
+                       dir="images/samples/grid/colour"
+                       cellWidth="220"
+                       cellHeight="220"
+                       preloadCount="60"
+                       autoCrop="cc"
+                       scroll="false"
+        >
+        </fsi-imagegrid>
+      </div>
+      <div class="col-md-3">
+      </div>
     </div>
-    <div class="col-md-6">
-    <fsi-imagegrid style="text-align:center;width:100%; height:1000px;"
-                   dir="images/samples/grid/colour"
-                   cellWidth="220"
-                   cellHeight="220"
-                   preloadCount="60"
-                   autoCrop="cc"
-                   scroll="false"
-    >
-    </fsi-imagegrid>
-    </div>
-    <div class="col-md-3">
-    </div>
-  </div>
 
   </div>
   </div>
@@ -64,7 +64,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md">
-        <img src="//fsi-site.neptunelabs.com/fsi/static/assets/samples/ssi/logo-misc-gre.svg" height="24">
+        <img src="{{{fsi.server}}}/{{{fsi.context}}}/static/assets/samples/ssi/logo-misc-gre.svg" height="24">
         <small class="d-block mb-3">&copy; 2017–2021</small>
       </div>
       <div class="col-6 col-md">
