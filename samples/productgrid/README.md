@@ -18,7 +18,7 @@ There are several possibilities to upload images into the interface.
 - Choose the Upload tab, click the "Choose files" button to add files to upload to the list. The files will be uploaded to the current folder.
 - Drag & Drop files to the file view or the tree view
 
-While having an image or folder selected, you can see all possible publishing ways for the specific item by visting the Publish To Web tab.
+While having an image or folder selected, you can see all possible publishing ways for the specific item by visiting the "Publish To Web" tab.
 For this example, select one image and use the preset *Medium Grid* in the section *Image Grid* :
 
 ![Config Image](readme-grid-1.png)

@@ -20,8 +20,8 @@ There are several possibilities to upload images into the interface.
 
 # Add Image Grid on the website
 
-While having an image or folder selected, you can see all possible publishing ways for the specific item by visting the Publish To Web tab.
-For this example, select one image and use the preset *Image Grid with meta data* in the section *Image Grid* :
+While having an image or folder selected, you can see all possible publishing ways for the specific item by visiting the "Publish To Web" tab.
+For this example, select one image and use the preset *Image Grid with metadata* in the section *Image Grid* :
 
 ![Config Image](readme-portfolio-1.png)
 

@@ -55,8 +55,7 @@ div.fsi-imagegrid-inner-container > div {
 .credit{
   font-size: x-small;
   color: #666666;
-  text-align: right;
-  padding-right: 10px;
+  text-align: left;
 }
 
 .product-heading {
