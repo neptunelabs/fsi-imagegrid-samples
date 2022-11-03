@@ -48,7 +48,7 @@ to the head of your website:
 
 ```html
 <script
-  src='https://fsi-site.neptunelabs.com/fsi/viewer/applications/imagegrid/js/fsiimagegrid.js'
+  src='https://docs.neptunelabs.com/fsi/viewer/applications/imagegrid/js/fsiimagegrid.js'
 </script>
 ```
 This ensures that FSI ImageGrid is loaded.
