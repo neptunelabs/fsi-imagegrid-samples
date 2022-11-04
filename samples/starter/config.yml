@@ -2,3 +2,10 @@ title: Starter
 image: logo.png
 description: Start your own demo
 priority: 99
+jsfiddle:
+  mapping:
+    html: "index.html"
+  resources:
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/imagegrid/js/fsiimagegrid.js"
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/quickzoom/js/fsiquickzoom.js"
