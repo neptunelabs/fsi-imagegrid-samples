@@ -4,40 +4,6 @@ This readme describes how to create a photographer portfolio showcase with FSI V
 The aim of the demo is to show how you can easily integrate an image grid with metadata. If you click on an
 image, a zoom modal opens.
 
-# Add your images/ assets to FSI Server
-
-First, you'll need to upload the images you want to use to FSI Server.
-You can install a [demo version](https://www.neptunelabs.com/get/) via Docker or use our [online demo server](https://demo.fsi-server.com/fsi/interface/) to try it out first.
-
-# Uploading images
-
-There are several possibilities to upload images into the interface.
-
-![Config Image](readme-portfolio.png)
-
-- Choose the Upload tab, click the "Choose files" button to add files to upload to the list. The files will be uploaded to the current folder.
-- Drag & Drop files to the file view or the tree view
-
-# Add Image Grid on the website
-
-While having an image or folder selected, you can see all possible publishing ways for the specific item by visiting the "Publish To Web" tab.
-For this example, select one image and use the preset *Image Grid with metadata* in the section *Image Grid* :
-
-![Config Image](readme-portfolio-1.png)
-
-This publishes the directory with a custom <fsi-imagegrid> tag and displays a medium image grid with meta data.
-
-
-![Config Image](readme-portfolio-2.png)
-
-The *Source Code* section enables you to control the look of your viewer by setting the dimensions and format, as well as adding effects or crop options to it.
-
-You can set the output dimensions and format (auto automatically chooses the best format for the browser used, or you can set WEBP, JPEG, PNG or GIF).
-In this area you also can see the source code for your selected publishing option which you can edit and copy to publish the images.
-
-Here you also see the <fsi-imagegrid> tag which sets the parameters used for the zoom option.
-If you click on the tag, the bar on the right automatically switches to the tab *Parameters*, enabling you to customize the ImageGrid to your liking.
-
 # Using FSI ImageGrid
 
 In order to display the viewer, you only need to add the corresponding scripts

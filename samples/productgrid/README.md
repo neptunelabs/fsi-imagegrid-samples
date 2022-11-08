@@ -4,20 +4,6 @@ This readme describes how the product grid page sample with *FSI Imagegrid* of *
 The aim of the demo is to show how you can easily integrate the viewer.
 You will also learn how to add metadata to images.
 
-# Add your images/ assets to FSI Server
-
-First, you'll need to upload the images you want to use to FSI Server.
-You can install a [demo version](https://www.neptunelabs.com/get/) via Docker or use our [online demo server](https://demo.fsi-server.com/fsi/interface/) to try it out first.
-
-# Uploading images
-
-There are several possibilities to upload images into the interface.
-
-![Config Image](readme-grid.png)
-
-- Choose the Upload tab, click the "Choose files" button to add files to upload to the list. The files will be uploaded to the current folder.
-- Drag & Drop files to the file view or the tree view
-
 While having an image or folder selected, you can see all possible publishing ways for the specific item by visiting the "Publish To Web" tab.
 For this example, select one image and use the preset *Medium Grid* in the section *Image Grid* :
 
