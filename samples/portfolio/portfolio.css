@@ -68,9 +68,6 @@ fsi-imagegrid .fsi-imagegrid-root .fsi-imagegrid-inner-container > div{
   cursor: pointer;
 }
 
-
-
-
 fsi-imagegrid div.fsi-imagegrid-root .fsi-image-grid-image-parent img{
   vertical-align: bottom;
 }
