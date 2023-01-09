@@ -9,7 +9,7 @@
   </div>
 
   <div class="row text-light py-3 mx-auto">
-      <fsi-imagegrid style="text-align:center;width:100%;height:100%;"
+      <fsi-imagegrid data-bs-target="#exampleModal" data-bs-toggle="modal" style="text-align:center;width:100%;height:100%;"
                      dir="/images/samples/grid/landscape/"
                      id="fsi-grid-fit"
                      cellWidth="300"
@@ -40,7 +40,7 @@
       </fsi-imagegrid>
   </div>
 
-  <div id="" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div id="modalSelection" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-body">
         <fsi-viewer adaptiveUISize="false" id="grid-viewer"
