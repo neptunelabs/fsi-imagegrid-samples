@@ -15,6 +15,7 @@ sample:
         imageGrid: true
       bootstrap:
         icons: true
+      jquery: true
   mapping:
     html: "index.html"
     css: "portfolio.css"
