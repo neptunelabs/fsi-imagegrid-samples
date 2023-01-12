@@ -9,7 +9,14 @@ sample:
     components:
       menu:
         template: data/misc-menu.yml
-      footer: true
+      footer:
+        credits:
+          photos:
+            - author: Samuel Ferrara
+              link: https://unsplash.com/@samferrara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+              platform: Unsplash
+          viewer:
+            link: https://www.neptunelabs.com/fsi-imagegrid/
       fsi:
         viewer: true
         imageGrid: true
