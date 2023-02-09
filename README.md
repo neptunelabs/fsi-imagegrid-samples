@@ -5,12 +5,12 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/neptunelabs/fsi-layers-samples/blob/main/LICENSE)
 
 
-FSI Layers renders any number of images as layers in a canvas.
+FSI ImageGrid displays large volumes of images in an image grid.
 The real-time scaling capabilities of the image server are used to achieve pixel-perfect results.
-All layers can be animated and blended.
-FSI Layers can be created and controlled as a simple HTML tag and/or via JavaScript API.
+Optional metadata can be displayed and the grid can be combined with the zoom capabilities of FSI Viewer.
+FSI ImageGrid can be created and controlled as a simple HTML tag and/or via a JavaScript API.
 
-This repository contains examples on how to use and build your own applications.
+This repository contains examples of how to use and build your own applications.
 
 ![Project Image](project.gif)
 
