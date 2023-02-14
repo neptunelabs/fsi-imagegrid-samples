@@ -14,43 +14,44 @@ to the head of your website:
   src='https://docs.neptunelabs.com/fsi/viewer/applications/imagegrid/js/fsiimagegrid.js'
 </script>
 ```
+
 This will ensure that FSI ImageGrid is loaded.
 
-Simply include  the <fsi-imagegrid> tag in the page where you want to display the grid.
+Simply include the <fsi-imagegrid> tag in the page where you want to display the grid.
 In our example, it looks like this:
 
 ```html
-  <fsi-imagegrid style="text-align:center;width:100%;height:100%;"
-                 dir="/images/samples/grid/landscape/"
-                 id="fsi-grid-fit"
-                 cellWidth="300"
-                 cellHeight="325"
-                 useTouchZoom="true"
-                 useQuickZoom="false"
-                 autoCrop="cc"
-                 scroll="false"
-                 debug="true"
-                 onCellClick="openPopUp"
+<fsi-imagegrid
+  style="text-align:center;width:100%;height:100%;"
+  dir="/images/samples/grid/landscape/"
+  id="fsi-grid-fit"
+  cellWidth="300"
+  cellHeight="325"
+  useTouchZoom="true"
+  useQuickZoom="false"
+  autoCrop="cc"
+  scroll="false"
+  debug="true"
+  onCellClick="openPopUp"
 >
-
   <fsi-imagegrid-template style="display:none">
     <div class="myImageGridTitle">
       <span>###iptc.Caption###</span>
     </div>
-    <div class="myImageGridImage" >
-      <img class="fsi-image-grid-image"/>
+    <div class="myImageGridImage">
+      <img class="fsi-image-grid-image" />
     </div>
-    <div class="myImageGridText" >
-					<span>
-						###iptc.FSI Extra###<br/><br/>
-						Foto: ###iptc.Credit###<br/><br/>
-					</span>
+    <div class="myImageGridText">
+      <span>
+        ###iptc.FSI Extra###<br /><br />
+        Foto: ###iptc.Credit###<br /><br />
+      </span>
     </div>
   </fsi-imagegrid-template>
 </fsi-imagegrid>
 ```
 
-For all the parameters that can be used, please refer to the  [manual](https://docs.neptunelabs.com/fsi-viewer/latest/fsi-viewer).
+For all the parameters that can be used, please refer to the [manual](https://docs.neptunelabs.com/fsi-viewer/latest/fsi-viewer).
 
 ## Displaying metadata
 
@@ -58,24 +59,24 @@ In our example, we have added some labels below the thumbnails in the image grid
 This is achieved by adding the following part:
 
 ```html
- <fsi-imagegrid-template style="display:none">
+<fsi-imagegrid-template style="display:none">
   <div class="myImageGridTitle">
     <span>###iptc.Caption###</span>
   </div>
-  <div class="myImageGridImage" >
-    <img class="fsi-image-grid-image"/>
+  <div class="myImageGridImage">
+    <img class="fsi-image-grid-image" />
   </div>
-  <div class="myImageGridText" >
-					<span>
-						###iptc.FSI Extra###<br/><br/>
-						Foto: ###iptc.Credit###<br/><br/>
-					</span>
+  <div class="myImageGridText">
+    <span>
+      ###iptc.FSI Extra###<br /><br />
+      Foto: ###iptc.Credit###<br /><br />
+    </span>
   </div>
 </fsi-imagegrid-template>
 ```
 
 The ImageGrid Title div contains the Caption metadata, while the myImageGridText div contains FSI Extra and the Credit.
-To add this metadata, go to the *Metadata* tab, click on the three tiles on the right and select **Add Fields**:
+To add this metadata, go to the _Metadata_ tab, click on the three tiles on the right and select **Add Fields**:
 
 ![Config Image](readme-portfolio-3.png)
 

@@ -2,6 +2,10 @@ overview:
   title: Photographer Portfolio
   image: logo.png
   description: Shows how a portfolio could be displayed with ImageGrid and Metadata used. On click a zoom viewer with the image is opened via modal.
+  facts:
+    - JS built image grid
+    - Meta data usage
+    - Zoom viewer modal
   order: 4
 sample:
   template:

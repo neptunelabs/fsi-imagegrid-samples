@@ -1,13 +1,12 @@
 .bg-image {
-  background-image: url("//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/grid/background/gradienta-t-Rt42Wl1RQ-unsplash.jpg&width=1920");
+  background-image: url('//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/grid/background/gradienta-t-Rt42Wl1RQ-unsplash.jpg&width=1920');
   background-repeat: no-repeat;
-  background-position:right top;
-  background-size:100% 100%;
+  background-position: right top;
+  background-size: 100% 100%;
   margin-left: 0 !important;
 }
 
-.thumbnail
-{
+.thumbnail {
   cursor: pointer;
 }
 
