@@ -19,18 +19,12 @@ This repository contains examples of how to use and build your own applications.
 Without starting this project in your IDE, you can discover, develop and customize
 all demos in JSFiddle.
 
-[Flowers in JSFiddle][flowjsf]
+[Product Image Grid in JSFiddle][productgridjsf]
 
-[Trains in JSFiddle][trainsjsf]
+[Photographer Portfolio in JSFiddle][photogridjsf]
 
-[Kitchen in JSFiddle][kitchenjsf]
-
-[Product Detail Page in JSFiddle][pdpjsf]
-
-[flowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/flowers
-[kitchenjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/kitchen
-[pdpjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/pdp
-[trainsjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/trains
+[productgridjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-imagegrid-samples/productgrid
+[photogridjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-imagegrid-samples/portfolio
 
 ## Start and develop
 
