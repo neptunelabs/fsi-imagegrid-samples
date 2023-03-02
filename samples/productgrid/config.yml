@@ -1,7 +1,7 @@
 overview:
   title: Product Image Grid
   image: logo.png
-  description: Shows how a product grid could look with ImageGrid used.
+  description: Shows how a product grid with ImageGrid used looks.
   facts:
     - JS built image grid
   order: 3
