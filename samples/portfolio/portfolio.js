@@ -1,4 +1,6 @@
 function openPopUp(evt, oCell){
-  $('#modalSelection').modal('toggle');
-  document.getElementById('fsi-grid-fit').assignFSIViewer('grid-viewer');
+  const modalToggle = document.getElementById('myModal');
+  modalToggle.addEventListener('hidden.bs.modal', event => {
+    document.getElementById('fsi-grid-fit').assignFSIViewer('grid-viewer');
+  })
 }

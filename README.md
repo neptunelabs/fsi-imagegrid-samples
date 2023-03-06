@@ -5,12 +5,12 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/neptunelabs/fsi-layers-samples/blob/main/LICENSE)
 
 
-FSI Layers renders any number of images as layers in a canvas.
+FSI ImageGrid displays large volumes of images in an image grid.
 The real-time scaling capabilities of the image server are used to achieve pixel-perfect results.
-All layers can be animated and blended.
-FSI Layers can be created and controlled as a simple HTML tag and/or via JavaScript API.
+Optional metadata can be displayed and the grid can be combined with the zoom capabilities of FSI Viewer.
+FSI ImageGrid can be created and controlled as a simple HTML tag and/or via a JavaScript API.
 
-This repository contains examples on how to use and build your own applications.
+This repository contains examples of how to use and build your own applications.
 
 ![Project Image](project.gif)
 
@@ -19,18 +19,12 @@ This repository contains examples on how to use and build your own applications.
 Without starting this project in your IDE, you can discover, develop and customize
 all demos in JSFiddle.
 
-[Flowers in JSFiddle][flowjsf]
+[Product Image Grid in JSFiddle][productgridjsf]
 
-[Trains in JSFiddle][trainsjsf]
+[Photographer Portfolio in JSFiddle][photogridjsf]
 
-[Kitchen in JSFiddle][kitchenjsf]
-
-[Product Detail Page in JSFiddle][pdpjsf]
-
-[flowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/flowers
-[kitchenjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/kitchen
-[pdpjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/pdp
-[trainsjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/trains
+[productgridjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-imagegrid-samples/productgrid
+[photogridjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-imagegrid-samples/portfolio
 
 ## Start and develop
 

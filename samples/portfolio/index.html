@@ -1,142 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <title>Simple FSI Image Demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" href='portfolio.css' type="text/css"/>
-  <script src='portfolio.js'></script>
-  <script src='{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/imagegrid/js/fsiimagegrid.js'></script>
-  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"></script>
-  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/viewer/js/fsiviewer.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@{{dependencies.bootstrapIcons}}/font/bootstrap-icons.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-</head>
-<body class="bg-dark">
-
-<header class="site-header sticky-top py-1">
-  <nav class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="#" aria-label="Product">
-      <img src="{{{fsi.server}}}/{{{fsi.context}}}/static/assets/samples/ssi/logo-misc-gre.svg" height="24" alt="">
-    </a>
-    <a class="p-6 d-none d-md-inline-block" href="#">SHOP</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">COLLECTION</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">BLOG</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">CONTACT</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">CART</a>
-  </nav>
-</header>
-
-<main class="content mx-auto">
-
-  <div class="d-md-flex bg-dark text-light flex-md-equal py-3 mx-auto text-center overflow-hidden">
-    <h2 class="display-5">Landscapes</h2>
-  </div>
-  <div class="d-md-flex bg-dark text-light flex-md-equal mx-auto text-center overflow-hidden">
-    <h6>A variety of photos by Samuel Ferrera.</h6>
-  </div>
-
-  <div class="row d-md-flex bg-dark text-light flex-md-equal py-3 mx-auto text-center overflow-hidden">
-    <div class="col-md-2">
+<div class="bg-dark">
+  <div class="container mx-auto">
+    <div class="text-light py-3 text-center">
+      <h2 class="display-5">Landscapes</h2>
     </div>
-    <div class="col-md-8">
-      <fsi-imagegrid style="text-align:center;width:100%;height:100%;"
-                     dir="/images/samples/grid/landscape/"
-                     id="fsi-grid-fit"
-                     cellWidth="300"
-                     cellHeight="325"
-                     useTouchZoom="true"
-                     useQuickZoom="false"
-                     autoCrop="cc"
-                     scroll="false"
-                     debug="true"
-                     onCellClick="openPopUp"
-      >
+    <div class="text-light text-center">
+      <h6>A variety of photos by Samuel Ferrera.</h6>
+    </div>
 
-        <fsi-imagegrid-template style="display:none">
+    <div class="row text-light py-3 mx-auto">
+      <fsi-imagegrid
+        data-bs-target="#myModal"
+        data-bs-toggle="modal"
+        style="text-align: center; width: 100%; height: 100%"
+        dir="/images/samples/grid/landscape/"
+        id="fsi-grid-fit"
+        cellWidth="300"
+        cellHeight="300"
+        useTouchZoom="true"
+        useQuickZoom="false"
+        autoCrop="cc"
+        scroll="false"
+        imageListLimit="0,64"
+        debug="true"
+        onCellClick="openPopUp"
+      >
+        <fsi-imagegrid-template style="display: none">
           <div class="myImageGridTitle">
             <span>###iptc.Caption###</span>
           </div>
-          <div class="myImageGridImage" >
-            <img class="fsi-image-grid-image"/>
+          <div class="myImageGridImage">
+            <img class="fsi-image-grid-image" />
           </div>
-          <div class="myImageGridText" >
-          <span>
-            ###iptc.FSI Extra###<br/><br/>
-            Foto: ###iptc.Credit###<br/><br/>
-          </span>
+          <div class="myImageGridText">
+            <span>
+              ###iptc.FSI Extra###<br /><br />
+              Photo: ###iptc.Credit###<br /><br />
+            </span>
           </div>
         </fsi-imagegrid-template>
       </fsi-imagegrid>
     </div>
-    <div class="col-md-2">
-    </div>
-  </div>
 
-
-  <div id="modalSelection" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <fsi-viewer adaptiveUISize="false" id="grid-viewer"
-                    progressBarVAlign="top" progressBarWidth="50"  inPlaceZoom="true"
-                    autoDisablePointerActions="true" plugins="fullScreen,resize" imageListLimit="0,64"
-                    fullScreenElement="samplePopupContent" skin="white" width="1140px" height="800px"
-                    src="images/samples/grid/landscape/samuel-ferrara-5zAhR9dGK-Q-unsplash.jpg" noNav="true"
-                    debug="true">
-
-        </fsi-viewer>
-      </div>
-    </div>
-  </div>
-</main>
-
-<footer class="py-5 footer w-100 overflow-hidden">
-  <div class="container py-5">
-    <div class="row ">
-      <div class="col-lg-3 mb-3">
-        <h4>Example Company</h4>
-        <ul class="list-unstyled small text-muted">
-          <li class="mb-2">Designed based on the <a class="link-secondary" href="https://getbootstrap.com/docs/5.0/examples/">Bootstrap examples</a>. Implemented to show various samples on how to use <a class="link-secondary" href="https://www.neptunelabs.com/fsi-server/">FSI Server</a>.</li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Cool stuff</a></li>
-          <li><a class="link-secondary" href="#">Random feature</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Resource name</a></li>
-          <li><a class="link-secondary" href="#">Another resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Another Resource</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Business</a></li>
-          <li><a class="link-secondary" href="#">Education</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Team</a></li>
-          <li><a class="link-secondary" href="#">Locations</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="credit">
-        Photos by <a class="link-secondary" href="https://unsplash.com/@samferrara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel Ferrara</a> on <a class="link-secondary" href="https://unsplash.com/">Unsplash</a>
+    <div
+      id="myModal"
+      class="modal fade bd-example-modal-xl"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myExtraLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="myModalToggleLabel">FSI Viewer - click on the image to zoom</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <fsi-viewer
+              adaptiveUISize="false"
+              id="grid-viewer"
+              progressBarVAlign="top"
+              progressBarWidth="50"
+              inPlaceZoom="true"
+              autoDisablePointerActions="true"
+              plugins="fullScreen,resize"
+              imageListLimit="0,64"
+              fullScreenElement="samplePopupContent"
+              skin="white"
+              width="1100px"
+              height="700px"
+              src="images/samples/grid/landscape/samuel-ferrara-5zAhR9dGK-Q-unsplash.jpg"
+              noNav="true"
+              debug="true"
+            >
+            </fsi-viewer>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-</body>
-</html>
+</div>
