@@ -67,7 +67,7 @@ sample:
         icons: true
   mapping:
     html: "index.html"
-    css: "prodgrid.css"
-    js: "prodgrid.js"
+    css: "style.css"
+    js: "script.js"
 jsfiddle:
   deploy: true
