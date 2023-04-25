@@ -13,13 +13,13 @@
       padding:0;
     }
   </style>
-  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"></script>
-  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/quickzoom/js/fsiquickzoom.js"></script>
-  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/imagegrid/js/fsiimagegrid.js"></script>
+  <script src="{{&fsi.server}}/{{&fsi.context}}/{{&fsi.viewer}}/applications/touchzoom/js/fsitouchzoom.js"></script>
+  <script src="{{&fsi.server}}/{{&fsi.context}}/{{&fsi.viewer}}/applications/quickzoom/js/fsiquickzoom.js"></script>
+  <script src="{{&fsi.server}}/{{&fsi.context}}/{{&fsi.viewer}}/applications/imagegrid/js/fsiimagegrid.js"></script>
 </head>
 <body>
 <fsi-imagegrid style="text-align:center;width:100%; height:100%;"
-               dir="images/samples/grid"
+               dir="{{&sources.images}}"
                cellWidth="260"
                cellHeight="174"
                preloadCount="60"
