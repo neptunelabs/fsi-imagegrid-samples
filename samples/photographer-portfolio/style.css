@@ -75,3 +75,7 @@ div.fsi-imagegrid-root .fsi-image-grid-image-parent img{
 .fsi-imagegrid-inner-container
 {text-align: center;
 }
+
+div.fsi-imagegrid-root.fsi-imagegrid-vertical {
+  text-align: center;
+}

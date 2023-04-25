@@ -14,3 +14,7 @@ div.fsi-imagegrid-inner-container > div {
   border: 1px solid #33333340;
   background-color: #6660;
 }
+
+div.fsi-imagegrid-root.fsi-imagegrid-vertical {
+  text-align: center;
+}
