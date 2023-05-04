@@ -1,0 +1,34 @@
+overview:
+  title: Photographer Portfolio
+  image: logo.png
+  description: Shows how a portfolio displayed with ImageGrid and Metadata used looks. On click a zoom viewer with the image is opened via modal.
+  facts:
+    - JS built image grid
+    - Meta data usage
+    - Zoom viewer modal
+  order: 4
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/misc-menu.yml
+      footer:
+        credits:
+          photos:
+            - author: Samuel Ferrara
+              link: https://unsplash.com/@samferrara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+              platform: Unsplash
+          viewer:
+            link: https://www.neptunelabs.com/fsi-imagegrid/
+      fsi:
+        viewer: true
+        imageGrid: true
+      bootstrap:
+        icons: true
+  mapping:
+    html: "index.html"
+    css: "style.css"
+    js: "script.js"
+playground:
+  deploy: true

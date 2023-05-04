@@ -1,0 +1,73 @@
+.thumbnail {
+  cursor: pointer;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle {
+  font-size: 16px;
+  text-align: left;
+  height: 25px;
+  color: #3c3c3b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle > span {
+  float: left;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .myImageGridText {
+  padding: 4px;
+  font-size: 12px;
+  text-align: left;
+  height: 80px;
+  color: #3c3c3b;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .myImageGridText > span {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .myImageGridImage {
+  width: 100%;
+  height: calc(100% - 105px);
+  background-color: #ddd;
+  text-align: center;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .myImageGridImage img {
+  vertical-align: middle;
+}
+
+fsi-imagegrid .fsi-imagegrid-root div.fsi-imagegrid-inner-container > div {
+  margin: 4px;
+  padding: 4px;
+  background-color: #fff;
+  border: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  will-change: box-shadow;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+div.fsi-imagegrid-root .fsi-image-grid-image-parent img {
+  vertical-align: bottom;
+}
+
+.fsi-imagegrid-inner-container > div:hover {
+  box-shadow: inset 0 0 0 4px rgb(36, 43, 73);
+}
+
+.fsi-imagegrid-inner-container {
+  text-align: center;
+}
+
+div.fsi-imagegrid-root.fsi-imagegrid-vertical {
+  text-align: center;
+}
