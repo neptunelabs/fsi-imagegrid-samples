@@ -11,7 +11,7 @@ to the head of your website:
 
 ```html
 <script
-  src='https://docs.neptunelabs.com/fsi/viewer/applications/imagegrid/js/fsiimagegrid.js'
+  src='https://fsi.domain.tld/fsi/viewer/applications/imagegrid/js/fsiimagegrid.js'
 </script>
 ```
 
