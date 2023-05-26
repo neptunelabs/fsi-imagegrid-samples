@@ -31,7 +31,7 @@ To display the viewer, all you need to do is add the following scripts to the he
 
 ```html
 <script
-  src='https://docs.neptunelabs.com/fsi/viewer/applications/imagegrid/js/fsiimagegrid.js'
+  src='https://fsi.domain.tld/fsi/viewer/applications/imagegrid/js/fsiimagegrid.js'
 </script>
 ```
 
