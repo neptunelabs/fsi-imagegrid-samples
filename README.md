@@ -1,4 +1,4 @@
-# [FSI ImageGrid](https://www.neptunelabs.com) &middot; Samples
+# [FSI ImageGrid](https://www.neptunelabs.com/fsi-imagegrid/) &middot; [Samples][GHPages]
 | ***Pixel-perfect*** | ***High-DPI-ready*** | ***Fast :rocket:*** | ***Hackable*** | ***Consistent*** |
 |:-----------------:|:-------------:|:---------------:|:---------------:|:---------------:|
 
