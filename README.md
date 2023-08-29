@@ -65,7 +65,7 @@ For further information on the FSI Viewer and FSI Server,
 please refer to the official [documentation][Docs].
 
 [License]: https://github.com/neptunelabs/fsi-imagegrid-samples/blob/main/LICENSE
-[Docs]: https://docs.neptunelabs.com/fsi-viewer/latest/fsi-image-grid
+[Docs]: https://docs.neptunelabs.com/docs/fsi-imagegrid
 [Server]: https://www.neptunelabs.com/get/
 [Grunt]: https://gruntjs.com/
 [Browsersync]: https://browsersync.io/
