@@ -1,0 +1,123 @@
+.productContainer {
+  position: relative;
+  height: 300px;
+  width: 1269px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.productContainer .img {
+  z-index: 10;
+  position: absolute;
+}
+
+.productContainer .gridContainer{
+  padding: 0px;
+  top:0;
+  right: 0;
+  margin: 0;
+  position: absolute;
+  height: 600px;
+  width: 1296px;
+  visibility: hidden;
+}
+
+
+.productContainer .text {
+  position: absolute;
+  z-index: 15;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: #3d3d3d;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.productContainer .btn {
+  position: absolute;
+  z-index: 15;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: #555;
+  border: 1px solid #555;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.productContainer .btn:hover {
+  background-color: #91b595;
+  color: white;
+  border: 1px solid #91b595;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle{
+  padding:1px 6px;
+  font-size:14px;
+  text-align:left;
+  height:20px;
+  line-height:20px;
+  background-color:#111;
+  color:#FFF;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle > span {
+  float: right;
+  line-height:inherit;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .myImageGridText{
+  border-top: 1px solid #666;
+  padding:4px;
+  font-size:12px;
+  text-align:center;
+  height:50px;
+  background-color:#EEE;
+  color:#000;
+  overflow:hidden;
+
+  white-space: nowrap;
+}
+fsi-imagegrid .fsi-imagegrid-root .myImageGridText > span{
+  display:inline-block;
+  text-align: left;
+}
+
+fsi-imagegrid div.fsi-imagegrid-root .myImageGridImage{
+  height:calc(100% - 70px);
+  background-color:#DDD;
+  text-align:center;
+  overflow:hidden;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .fsi-imagegrid-inner-container > div{
+  margin:4px;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .fsi-image-grid-image-parent img{
+  vertical-align: top;
+}
+
+div.fsi-imagegrid-inner-container > div:hover {
+  border-color: #91b595;
+  -webkit-box-shadow: 0px 0px 0px 2px #91b595;
+  box-shadow: 0px 0px 0px 2px #91b595;
+}
+
+div.fsi-imagegrid-inner-container > div {
+  border: 1px solid #bfbdbd;
+}
