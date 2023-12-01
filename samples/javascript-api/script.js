@@ -34,11 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // open modal on click
     function openPopUp(evt, oCell) {
-      const modalToggle = document.getElementById('myModal')
-      modalToggle.addEventListener('shown.bs.modal', (event) => {
-        modalToggle.focus()
-        console.log('works!')
-      })
+      document.getElementById('myViewer').addListener("onReady", doStuff);
+      function doStuff(){
+        console.log('Dostuff works!')
+        const modalToggle = document.getElementById('myModal')
+        modalToggle.addEventListener('shown.bs.modal', (event) => {
+          modalToggle.focus()
+        })
+      }
+
     }
 
     // add metadata stuff
