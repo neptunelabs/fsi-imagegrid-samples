@@ -1,13 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
   let instance
   document.getElementById('gridBtn').addEventListener('click', () => {
-    const ele = document.createElement("div");
-    ele.setAttribute("id", "gridViewer");
-    document.getElementById('gridEle').appendChild(ele);
+  const show = () => {
+  // show FSI ImageGrid instance and hide image
+    document.getElementById('gridEle').style.visibility = 'visible'
+    document.getElementById('gridImg').style.display = 'none'
+    document.getElementById('gridBtn').style.display = 'none'
+    document.getElementById('productContainer').style.height = '600px'
+    document.getElementById('gridViewer').style.height = '600px'
+    document.getElementById('gridText').style.display = 'none'
+    addMetadata()
+  }
 
-    instance = new $FSI.ImageGrid(ele, {
+    const instance = $FSI.createNode("fsi-imagegrid",  {
+      data-bs-target:'#myModal',
+      data-bs-toggle:'modal',
       imagesources: 'images/samples/ssi/furniture/home-7473734.jpg,  images/samples/ssi/furniture/home-7531451.jpg, images/samples/ssi/furniture/home-7531461_1920.jpg, images/samples/ssi/furniture/home-7531469.jpg, images/samples/ssi/furniture/home-7567164.jpg, images/samples/ssi/furniture/interior-design-6012873.jpg, images/samples/ssi/furniture/dresser-6717656.jpg, images/samples/ssi/furniture/living-room-7225005.jpg, images/samples/ssi/furniture/living-room-7547558.jpg, images/samples/ssi/furniture/home-2082923.jpg',
       debug: true,
+      width:'1500px',
       cellWidth: '250',
       cellHeight: '250',
       preloadCount: '120',
@@ -15,23 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
       id: 'gridViewer',
       onCellClick:'openPopUp',
       // listen for finished loading FSI ImageGrid and becomes interactive
-      onReady: () => {
-        // show FSI ImageGrid instance and hide image
-        document.getElementById('gridEle').style.visibility = 'visible'
-        document.getElementById('gridImg').style.display = 'none'
-        document.getElementById('gridBtn').style.display = 'none'
-        document.getElementById('productContainer').style.height = '600px'
-        document.getElementById('gridViewer').style.height = '600px'
-        document.getElementById('gridText').style.display = 'none'
-        addMetadata()
-      },
+      onReady: show
     }, true)
+
+
+    document.getElementById('gridEle').appendChild(instance)
+
 
     // open modal on click
     function openPopUp(evt, oCell) {
       const modalToggle = document.getElementById('myModal')
       modalToggle.addEventListener('hidden.bs.modal', (event) => {
-        document.getElementById('gridViewer').assignFSIViewer('grid-viewer')
+        instance.assignFSIViewer('grid-viewer')
       })
     }
 
