@@ -35,6 +35,7 @@ sample:
             link: https://www.neptunelabs.com/dynamic-imaging/
       fsi:
         imageGrid: true
+        viewer: true
       bootstrap:
         icons: false
   mapping:

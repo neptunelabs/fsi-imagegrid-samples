@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
     const instance = $FSI.createNode("fsi-imagegrid",  {
-      data-bs-target:'#myModal',
-      data-bs-toggle:'modal',
       imagesources: 'images/samples/ssi/furniture/home-7473734.jpg,  images/samples/ssi/furniture/home-7531451.jpg, images/samples/ssi/furniture/home-7531461_1920.jpg, images/samples/ssi/furniture/home-7531469.jpg, images/samples/ssi/furniture/home-7567164.jpg, images/samples/ssi/furniture/interior-design-6012873.jpg, images/samples/ssi/furniture/dresser-6717656.jpg, images/samples/ssi/furniture/living-room-7225005.jpg, images/samples/ssi/furniture/living-room-7547558.jpg, images/samples/ssi/furniture/home-2082923.jpg',
       debug: true,
       width:'1500px',
@@ -28,15 +26,16 @@ document.addEventListener('DOMContentLoaded', () => {
       onReady: show
     }, true)
 
+    instance.setAttribute("data-bs-target","#myModal")
+    instance.setAttribute("data-bs-toggle","modal")
 
     document.getElementById('gridEle').appendChild(instance)
-
 
     // open modal on click
     function openPopUp(evt, oCell) {
       const modalToggle = document.getElementById('myModal')
       modalToggle.addEventListener('hidden.bs.modal', (event) => {
-        instance.assignFSIViewer('grid-viewer')
+        instance.assignFSIViewer('viewer')
       })
     }
 
