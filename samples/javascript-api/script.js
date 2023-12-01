@@ -35,15 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('gridEle').appendChild(instance)
     })
 
-    // open modal on click
-    function openPopUp(evt, oCell) {
-
-      const modalToggle = document.getElementById('myModal')
-      modalToggle.addEventListener('shown.bs.modal', (event) => {
-        modalToggle.focus()
-        console.log('works!')
-      })
-    }
 
     // add metadata stuff
     function addMetadata () {
