@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('gridBtn').addEventListener('click', () => {
 
   document.getElementById('myViewer').addListener('onReady', () => {
+  if (document.getElementById('gridEle').firstChild) return; // viewers already setup
   const show = () => {
   // show FSI ImageGrid instance and hide image
     document.getElementById('gridEle').style.visibility = 'visible'
