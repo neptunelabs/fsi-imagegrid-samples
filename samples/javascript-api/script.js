@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       autoCrop: 'cc',
       id: 'gridViewer',
       onCellClick:'openPopUp',
+      viewerSelector:'#myViewer',
       // listen for finished loading FSI ImageGrid and becomes interactive
       onReady: show
     }, true)
@@ -34,8 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // open modal on click
     function openPopUp(evt, oCell) {
       const modalToggle = document.getElementById('myModal')
-      modalToggle.addEventListener('hidden.bs.modal', (event) => {
-        instance.assignFSIViewer('viewer')
+      modalToggle.addEventListener('shown.bs.modal', (event) => {
+        modalToggle.focus()
+        console.log('works!')
       })
     }
 
