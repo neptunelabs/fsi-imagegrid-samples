@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   let instance
   document.getElementById('gridBtn').addEventListener('click', () => {
+
+  document.getElementById('myViewer').addListener('onReady', () => {
   const show = () => {
   // show FSI ImageGrid instance and hide image
     document.getElementById('gridEle').style.visibility = 'visible'
@@ -12,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addMetadata()
   }
 
-    const instance = $FSI.createNode("fsi-imagegrid",  {
+  const instance = $FSI.createNode("fsi-imagegrid",  {
       imagesources: 'images/samples/ssi/furniture/home-7473734.jpg,  images/samples/ssi/furniture/home-7531451.jpg, images/samples/ssi/furniture/home-7531461_1920.jpg, images/samples/ssi/furniture/home-7531469.jpg, images/samples/ssi/furniture/home-7567164.jpg, images/samples/ssi/furniture/interior-design-6012873.jpg, images/samples/ssi/furniture/dresser-6717656.jpg, images/samples/ssi/furniture/living-room-7225005.jpg, images/samples/ssi/furniture/living-room-7547558.jpg, images/samples/ssi/furniture/home-2082923.jpg',
       debug: true,
       width:'1500px',
@@ -21,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
       preloadCount: '120',
       autoCrop: 'cc',
       id: 'gridViewer',
-      onCellClick:'openPopUp',
       viewerSelector:'#myViewer',
       // listen for finished loading FSI ImageGrid and becomes interactive
       onReady: show
@@ -31,18 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
     instance.setAttribute("data-bs-toggle","modal")
 
     document.getElementById('gridEle').appendChild(instance)
+    })
 
     // open modal on click
     function openPopUp(evt, oCell) {
-      document.getElementById('myViewer').addListener("onReady", doStuff);
-      function doStuff(){
-        console.log('Dostuff works!')
-        const modalToggle = document.getElementById('myModal')
-        modalToggle.addEventListener('shown.bs.modal', (event) => {
-          modalToggle.focus()
-        })
-      }
 
+      const modalToggle = document.getElementById('myModal')
+      modalToggle.addEventListener('shown.bs.modal', (event) => {
+        modalToggle.focus()
+        console.log('works!')
+      })
     }
 
     // add metadata stuff
