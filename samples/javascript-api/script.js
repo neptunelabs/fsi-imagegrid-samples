@@ -41,26 +41,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // add metadata stuff
     function addMetadata () {
-     const template = document.createElement("fsi-imagegrid-template");
-     template.style.display = 'none'
-     template.setAttribute("class", 'fsi-image-grid-template');
-     template.setAttribute("id", 'fsi-image-grid-template');
-
-     const myImageGridImage = document.createElement("div");
-     myImageGridImage.setAttribute("id", 'myImageGridImage');
-     myImageGridImage.setAttribute("class", 'myImageGridImage');
-     const img = document.createElement("img");
-     img.setAttribute("class", 'fsi-image-grid-image');
-
-     const myImageGridText = document.createElement("div");
-     myImageGridText.innerHTML = "###iptc.Headline### <br/>###iptc.Caption### <br/>###iptc.FSI Extra###</span>";
-
-     myImageGridText.setAttribute("class", 'myImageGridText');
-
-     document.getElementById("gridViewer").appendChild(template);
-     document.getElementById("fsi-image-grid-template").appendChild(myImageGridImage);
-     document.getElementById("fsi-image-grid-template").appendChild(myImageGridText);
-     document.getElementById("myImageGridImage").appendChild(img);
+     console.log('Metadata here?')
+     const tpl = document.createElement ("fsi-imagegrid-template");
+      tpl.innerHTML = "      <div class=\"myImageGridTitle\">\n" +
+       "          ###iptc.Headline###\n" +
+       "      </div>\n" +
+       "      <div class=\"myImageGridImage\" >\n" +
+       "        <img class=\"fsi-image-grid-image\"/>\n" +
+       "      </div>\n" +
+       "      <div class=\"myImageGridText\" >\n" +
+       "        <span>\n" +
+       "      ###iptc.Caption### <br/>###iptc.FSI Extra###\n" +
+       "        </span>\n" +
+       "      </div>";
+      document.getElementById('gridViewer').appendChild(tpl)
    }
 
   })
