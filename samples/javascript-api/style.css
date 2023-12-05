@@ -62,39 +62,25 @@
   border: 1px solid #91b595;
 }
 
-fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle{
-  padding:1px 6px;
-  font-size:14px;
-  text-align:left;
-  height:20px;
-  line-height:20px;
-  background-color:#111;
-  color:#FFF;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space: nowrap;
-}
-
-fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle > span {
-  float: right;
-  line-height:inherit;
-}
-
 fsi-imagegrid .fsi-imagegrid-root .myImageGridText{
-  border-top: 1px solid #666;
-  padding:4px;
-  font-size:12px;
-  text-align:center;
-  height:50px;
+  height:70px;
   background-color:#EEE;
   color:#000;
   overflow:hidden;
-
   white-space: nowrap;
+  bottom: 0;
+  text-overflow: ellipsis;
+  font-family: sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+  margin: 0;
+  font-size: 12px;
+  line-height: normal;
+  z-index: 1;
 }
 fsi-imagegrid .fsi-imagegrid-root .myImageGridText > span{
   display:inline-block;
-  text-align: left;
 }
 
 fsi-imagegrid div.fsi-imagegrid-root .myImageGridImage{
@@ -120,4 +106,8 @@ div.fsi-imagegrid-inner-container > div:hover {
 
 div.fsi-imagegrid-inner-container > div {
   border: 1px solid #bfbdbd;
+}
+
+.fsi-imagegrid-root.fsi-imagegrid-vertical.fsi-imagegrid-2 div.fsi-imagegrid-inner-container > div {
+  border-radius: 5px;
 }
