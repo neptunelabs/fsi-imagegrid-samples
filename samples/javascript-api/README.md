@@ -76,7 +76,7 @@ For the modal which contains FSI Viewer we use a Bootstrap modal:
 </div>
 ```
 
-The switch on button click is achieved via JS in the corresponding `script.js`:
+The switch on button click is achieved via JS in the corresponding `script.js`.
 
 ```js
 document.addEventListener('DOMContentLoaded', () => {
@@ -86,9 +86,18 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('gridBtn').disabled = false;
     //document.getElementById("myModal").removeAttribute("style");
   });
+```
 
+```js
   document.getElementById('gridBtn').addEventListener('click', () => {
+```
+A click on the `gridBtn` element will initialise a new FSI ImageGrid element in the `gridEle` element.
+For this we use `$FSI.createNode` below.
+With the `onReady` callback (see [documentation](https://docs.neptunelabs.com/docs/fsi-imagegrid/js-api/callbacks#onready))
+we call `show` which ensures a smooth transition:
+Only when the viewer is ready will the viewer element will be set to visible, while the image and button are set to `display:none`.
 
+```js
 
     const show = () => {
       // show FSI ImageGrid instance and hide image
@@ -118,13 +127,28 @@ document.addEventListener('DOMContentLoaded', () => {
       // listen for finished loading FSI ImageGrid and becomes interactive
       onReady: show
     });
+```
+
+It's important to add the FSI Viewer ID to the parameter `viewerSelector:'#myViewer'`, this connects the image grid to the zoom viewer.
+
+We also enable the Bootstrap modal by giving the image grid element the following attributes:
+
+```js
 
     instance.setAttribute("data-bs-target","#myModal")
     instance.setAttribute("data-bs-toggle","modal")
 
     addMetadata(instance);
     document.getElementById('gridEle').appendChild(instance)
+```
+The metadata is then added and the viewer appended to the `gridContainer` div.
 
+### Adding metadata
+
+We need to add the `fsi-imagegrid-template` node within the `<fsi-imagegrid>` custom tag.
+For this, we use the function `addMetadata`:
+
+```js
     // add metadata stuff
     function addMetadata (instance) {
       const tpl = document.createElement ("fsi-imagegrid-template");
@@ -143,80 +167,5 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
-```
-
-A click on the `gridBtn` element will initialise a new FSI ImageGrid element in the `gridEle` element.
-For this we use `$FSI.createNode`.
-
-```js
-const instance = $FSI.createNode("fsi-imagegrid",  {
-  imagesources: 'images/samples/ssi/furniture/home-7473734.jpg,images/samples/ssi/furniture/home-7531451.jpg,images/samples/ssi/furniture/home-7531461_1920.jpg, images/samples/ssi/furniture/home-7531469.jpg, images/samples/ssi/furniture/home-7567164.jpg, images/samples/ssi/furniture/interior-design-6012873.jpg, images/samples/ssi/furniture/dresser-6717656.jpg, images/samples/ssi/furniture/living-room-7225005.jpg,images/samples/ssi/furniture/living-room-7547558.jpg,images/samples/ssi/furniture/furniture-6048139.jpg',
-  debug: true,
-  width:'1500px',
-  height:'800px',
-  cellWidth: '250',
-  cellHeight: '290',
-  preloadCount: '120',
-  autoCrop: 'cc',
-  id: 'gridViewer',
-  viewerSelector:'#myViewer',
-  // listen for finished loading FSI ImageGrid and becomes interactive
-  onReady: show
-});
-```
-
-It's important to add the FSI Viewer ID to the parameter `viewerSelector:'#myViewer'`, this connects the image grid to the zoom viewer.
-
-We also enable the Bootstrap modal by giving the image grid element the following attributes:
-
-```js
-    instance.setAttribute("data-bs-target","#myModal")
-    instance.setAttribute("data-bs-toggle","modal")
-```
-
-The metadata is then added and the viewer appended to the `gridContainer` div:
-
-```js
-  addMetadata(instance);
-  document.getElementById('gridEle').appendChild(instance)
-```
-
-With the `onReady` callback (see [documentation](https://docs.neptunelabs.com/docs/fsi-imagegrid/js-api/callbacks#onready)) we call `show` which ensures a smooth transition:
-
-```js
- const show = () => {
-  // show FSI ImageGrid instance and hide image
-  document.getElementById('gridEle').style.visibility = 'visible'
-  document.getElementById('gridImg').style.display = 'none'
-  document.getElementById('gridBtn').style.display = 'none'
-  document.getElementById('productContainer').style.height = '600px'
-  document.getElementById('gridViewer').style.height = '600px'
-  document.getElementById('gridText').style.display = 'none'
-  const mm = document.getElementById('myModal');
-  mm.style.visibility = "visible";
-  mm.style.display = "none";
 }
-```
-
-Only when the viewer is ready will the viewer element will be set to visible, while the image and button are set to `display:none`.
-
-### Adding metadata
-
-We need to add the `fsi-imagegrid-template` node within the `<fsi-imagegrid>` custom tag.
-For this, we use the function `addMetadata`:
-
-```js
-    function addMetadata (instance) {
-      const tpl = document.createElement ("fsi-imagegrid-template");
-      tpl.innerHTML =
-        "      <div class=\"myImageGridImage\" >\n" +
-        "        <img class=\"fsi-image-grid-image\"/>\n" +
-        "      </div>\n" +
-        "      <div class=\"myImageGridText\" >\n" +
-        "        <span>\n" +
-        "      ###iptc.Headline### <br/>###iptc.Caption### <br/>###iptc.Urgency###\n" +
-        "        </span>\n" +
-        "      </div>";
-      instance.appendChild(tpl)
-    }
 ```
