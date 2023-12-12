@@ -12,7 +12,7 @@ FSI ImageGrid can be created and controlled as a simple HTML tag and/or via a Ja
 
 This repository contains examples of how to use and build your own applications.
 
-![Project Image](project.apng)
+[![Project Image](project.apng)][GHPages]
 
 ## Getting Started
 
