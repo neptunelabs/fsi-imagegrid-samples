@@ -10,7 +10,7 @@ overview:
   order: 98
 sample:
   template:
-    schema: framework-2023
+    schema: bootstrap-taupe
     components:
       menu:
         template: data/furniture-menu.yml
@@ -38,9 +38,3 @@ sample:
         viewer: true
       bootstrap:
         icons: false
-  mapping:
-    html: 'index.html'
-    css: 'style.css'
-    js: 'script.js'
-playground:
-  deploy: true
