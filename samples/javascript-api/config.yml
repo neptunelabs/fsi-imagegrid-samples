@@ -7,7 +7,7 @@ overview:
     - JS API Demonstration
     - Meta Data use for labels
     - Styling via CSS
-  order: 98
+  order: 10
 sample:
   template:
     schema: bootstrap-taupe
