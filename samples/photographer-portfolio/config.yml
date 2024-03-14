@@ -7,22 +7,20 @@ overview:
     - Meta data usage
     - Zoom viewer modal
   order: 4
+schema: bootstrap-taupe
 sample:
-  template:
-    schema: bootstrap-taupe
-    components:
-      menu:
-        template: data/misc-menu.yml
-      footer:
-        credits:
-          photos:
-            - author: Samuel Ferrara
-              link: https://unsplash.com/@samferrara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-          viewer:
-            link: https://www.neptunelabs.com/fsi-imagegrid/
-      fsi:
-        viewer: true
-        imageGrid: true
-      bootstrap:
-        icons: true
+  menu:
+    data: misc-menu.yml
+  footer:
+    credits:
+      photos:
+        - author: Samuel Ferrara
+          link: https://unsplash.com/@samferrara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+      viewer:
+        link: https://www.neptunelabs.com/fsi-imagegrid/
+  fsi:
+    viewer: true
+    imageGrid: true
+  bootstrap:
+    icons: true
