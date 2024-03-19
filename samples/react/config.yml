@@ -20,6 +20,7 @@ sample:
     description: Check out our furniture sale.
     link: SHOP NOW
   highlight: REACT OF THE DAY
+  categories: true
   footer:
     credits:
       photos:
