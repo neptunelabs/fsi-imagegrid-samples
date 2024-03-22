@@ -1,0 +1,43 @@
+<div class="container text-center">
+  <div class="bg-light g-3 py-3 col-sm-8 col-md-12 productContainer mx-auto" id="productContainer">
+    <img id="gridImg" src="{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/ssi/furniture/shelves-4032134.jpg&width=1269&rect=0.2888,0.34931,0.65009,0.27263&height=300&effects=pad(CC,FFFFFF),transparency(50)" width="1269" alt="" height="300">
+    <p class="text" id="gridText">MEGA DEALS:<br/> UP TO 50% OFF</p>
+    <button id="gridBtn" class="btn" disabled="disabled">VIEW DEALS OF THE DAY</button>
+    <div class="gridContainer mx-auto" id="gridEle"></div>
+  </div>
+</div>
+
+<div
+  id="myModal"
+  class="modal fade bd-example-modal-xl"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myExtraLargeModalLabel"
+  aria-hidden="true"
+  style="display:block;visibility:hidden;opacity:1;"
+>
+  <div class="modal-dialog modal-xl" role="document" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="myModalToggleLabel">Click on the image to zoom</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <fsi-viewer
+          id="myViewer"
+          plugins="fullScreen"
+          resize="false"
+          fullScreenElement="samplePopupContent"
+          skin="white"
+          width="1100px"
+          height="700px"
+          debug="true"
+        >
+        </fsi-viewer>
+    </div>
+  </div>
+</div>
+</div>
+
+

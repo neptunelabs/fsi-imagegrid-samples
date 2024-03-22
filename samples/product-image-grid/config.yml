@@ -5,66 +5,58 @@ overview:
   facts:
     - JS built image grid
   order: 3
+schema: bootstrap-taupe
 sample:
-  template:
-    schema: framework-2023
-    components:
-      menu:
-        template: data/misc-menu.yml
-      footer:
-        credits:
-          photos:
-            - author: Alexander Rotker
-              link: https://unsplash.com/@awrotker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: Mike Meyers
-              link: https://unsplash.com/@mike_meyers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: Alex Gruber
-              link: https://unsplash.com/@alex_gruber?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: Ervo Rocks
-              link: https://unsplash.com/@ervorocks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author:  Ryan Plomp
-              link: https://unsplash.com/@ryancp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: Willian Justen de Vasconcellos
-              link: https://unsplash.com/@willianjusten?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: Vincent Branciforti
-              link: https://unsplash.com/@vfbranciforti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: REVOLT
-              link: https://unsplash.com/@revolt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: Apostolos Vamvouras
-              link: https://unsplash.com/@apostolosv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: Mae Mu
-              link: https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: Di_An_h
-              link: https://unsplash.com/@di_an_h?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: C D-X
-              link: https://unsplash.com/@cdx2?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: AB
-              link: https://unsplash.com/@applefanboy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-            - author: LUM3N
-              link: https://unsplash.com/@lum3n?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-          viewer:
-            link: https://www.neptunelabs.com/fsi-imagegrid/
-      fsi:
-        imageGrid: true
-      bootstrap:
-        icons: true
-  mapping:
-    html: "index.html"
-    css: "style.css"
-    js: "script.js"
-playground:
-  deploy: true
+  menu:
+    data: misc-menu.yml
+  footer:
+    credits:
+      photos:
+        - author: Alexander Rotker
+          link: https://unsplash.com/@awrotker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: Mike Meyers
+          link: https://unsplash.com/@mike_meyers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: Alex Gruber
+          link: https://unsplash.com/@alex_gruber?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: Ervo Rocks
+          link: https://unsplash.com/@ervorocks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author:  Ryan Plomp
+          link: https://unsplash.com/@ryancp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: Willian Justen de Vasconcellos
+          link: https://unsplash.com/@willianjusten?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: Vincent Branciforti
+          link: https://unsplash.com/@vfbranciforti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: REVOLT
+          link: https://unsplash.com/@revolt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: Apostolos Vamvouras
+          link: https://unsplash.com/@apostolosv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: Mae Mu
+          link: https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: Di_An_h
+          link: https://unsplash.com/@di_an_h?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: C D-X
+          link: https://unsplash.com/@cdx2?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: AB
+          link: https://unsplash.com/@applefanboy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+        - author: LUM3N
+          link: https://unsplash.com/@lum3n?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+      viewer:
+        link: https://www.neptunelabs.com/fsi-imagegrid/
+  fsi:
+    imageGrid: true
+  bootstrap:
+    icons: true

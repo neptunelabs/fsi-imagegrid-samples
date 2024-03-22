@@ -2,5 +2,6 @@
 title: 'FSI ImageGrid'
 projectURL: https://www.neptunelabs.com/fsi-imagegrid/
 originAssetPath: imagegrid
+schema: overview-taupe
 playground:
   stackblitz: fsi-imagegrid-samples
