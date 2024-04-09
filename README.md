@@ -1,9 +1,14 @@
-# [FSI ImageGrid](https://www.neptunelabs.com/fsi-imagegrid/) &middot; [Samples][GHPages]
+# FSI ImageGrid Samples
 | ***Pixel-perfect*** | ***High-DPI-ready*** | ***Fast :rocket:*** | ***Hackable*** | ***Consistent*** |
 |:-----------------:|:-------------:|:---------------:|:---------------:|:---------------:|
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)][License]
 
+---
+
+* [Live Samples @ GitHub Pages 🔗][GHPages]
+* [FSI ImageGrid - Product Page 🔗](https://www.neptunelabs.com/fsi-imagegrid/)
+* [Documentation 🔗][Docs]
 
 FSI ImageGrid displays large volumes of images in an image grid.
 The real-time scaling capabilities of the image server are used to achieve pixel-perfect results.
